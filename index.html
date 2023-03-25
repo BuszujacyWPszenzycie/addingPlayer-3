@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wybierz swojego zawodnika</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/288c8cccc3.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./dist/css/main.min.css">
+</head>
+
+<body>
+
+  <section class="main">
+    <div class="main__shadow"></div>
+    <div class="wrapper">
+      <div class="wrapper__shadow"></div>
+      <div class="box box__buttons">
+        <button class="btn btn__add">Dodaj</button>
+        <a href=""><button class="btn btn__refresh">Odśwież</button></a>
+      </div>
+      <div class="box box__team">
+        <div class="box__team-player" draggable="true"><i class="fa-solid fa-user box__team-player-icon"></i>
+          <div class="box__team-player-shadow"></div>
+          <div class="box__team-player-name">
+            <p class="box__team-player-name-p">Marcin</p>
+          </div>
+        </div>
+      </div>
+      <!-- First Modal for adding name of the player -->
+      <div class="modal modal__name ">
+        <div class="modal__name-wrapper">
+          <div class="modal__name-wrapperIcon">
+            <i class="fa-solid fa-xmark btn__closeModalName"></i>
+          </div>
+          <div class="modal__name-buttonsWrapper">
+            <div class="flex__wrapper">
+              <h3 class="modal__title">Podaj imię zawodnika</h3>
+              <!-- <label for="input-name" class="modal__name-label">Podaj imię zawodnika</label> -->
+              <input type="text" class="modal__name-input" placeholder="Wpisz imię...">
+            </div>
+            <button class="btn btn__confirm">Zatwierdź</button>
+          </div>
+        </div>
+      </div>
+      <!-- End of first Modal for adding name of the player -->
+      <!-- Second modal for asking if you want to add picture -->
+      <div class="modal modal__yesNo">
+        <div class="modal__yesNo-wrapper">
+          <h3 class="modal__title">Czy chcesz dodać zdjęcie zawodnika?</h3>
+          <button class="btn btn__yes">tak</button>
+          <button class="btn btn__no">nie</button>
+        </div>
+      </div>
+      <!-- End of second modal for asking if you wan to add picture -->
+      <!-- Third modal for adding picture of player -->
+      <div class="modal modal__picture">
+        <h3 class="modal__title">Wybierz zdjęcie</h3>
+        <label for="connection-label-picture"><i class="fa-regular fa-image modal__picture-label"></i></label>
+        <input type="file" class="modal__picture-input" name="test" id="connection-label-picture">
+      </div>
+      <!-- End of third modal for adding picture of player -->
+    </div>
+  </section>
+
+  <script src="./dist/js/main.min.js"></script>
+</body>
+
+</html>
